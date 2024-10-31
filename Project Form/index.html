@@ -1,0 +1,86 @@
+<h1 id="title">Form Franulovic</h1>
+<p id="description">Projeto TCC FreeCodCamp
+</p>
+<link rel="stylesheet" href="style.css">
+<form id="survey-form">
+  <div class="form-group">
+  <label id="name-label" for="name">Nome</label>
+  <input type="text" name="name" id="name" class="form-control" placeholder="Insira seu Nome" required="">
+  </div>
+  <div class="form-group">
+<label id="email-label" for="email">Email</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Insira seu Email" required="">
+</div>
+  <div class="form-group">
+<label id="number-label" for="number">Idade<span class="clue">(opcional)</span></label>
+<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Idade">
+</div>
+  <div class="form-group">
+<p>Qual opção melhor descreve sua função atual?</p>
+<select id="dropdown" name="role" class="form-control" required="">
+<option disabled="" selected="" value="">Selecionar função atual</option>
+<option value="Estudante">
+Estudante</option>
+<option value="Trabalho">Trabalho em período integral </option>
+<option value="Aluno">Aluno em período integral</option>
+<option value="PrefereNao">Prefere não dizer </option>
+<option value="Outro">Outro</option>
+</select>
+</div>
+  <div class="form-group">
+<p>
+Você recomendaria o freeCodeCamp a um amigo?</p>
+<label>
+<input name="Usuario-recomenda" value="
+Definitivamente" type="radio" class="input-radio" checked="">
+Definitivamente</label>
+<label>
+<input name="Usuario-recomenda" value="Talvez" type="radio" class="input-radio">Talvez</label>
+<label><input name="Usuario-recomenda" value="Não tenho certeza" type="radio" class="input-radio">Não tenho certeza</label>
+</div>
+  <div class="form-group">
+<p>
+
+O que você gostaria de ver melhorado? 
+<span class="clue">(Marque todas as opções aplicáveis)</span>
+</p>
+<label><input name="prefer" value="
+Projetos-front-end" type="checkbox" class="input-checkbox">
+Projetos de front-end</label>
+<label>
+<input name="prefer" value="Projetos-back-end" type="checkbox" class="input-checkbox">Projetos de back-end</label>
+<label><input name="prVisualização de dadosefer" value="Visualização-dados" type="checkbox" class="input-checkbox">Visualização de dados</label>
+<label><input name="prefer" value="
+Desafios" type="checkbox" class="input-checkbox">
+Desafios</label>
+<label><input name="prefer" value="Comunidade-Open-Source" type="checkbox" class="input-checkbox">Comunidade Open Source</label>
+<label><input name="prefer" value="
+Salas-ajuda-Gitter" type="checkbox" class="input-checkbox">
+Salas de ajuda Gitter</label>
+<label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos</label>
+<label><input name="prefer" value="
+Meetups-Cidade" type="checkbox" class="input-checkbox">
+Meetups de Cidade</label>
+<label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">
+Wiki</label>
+<label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Fórum</label>
+<label><input name="prefer" value="
+Cursos-adicionais" type="checkbox" class="input-checkbox">
+Cursos adicionais</label>
+</div>
+  <div class="form-group">
+<p>
+Quaisquer comentários ou sugestões?</p>
+<textarea id="comente" class="input-textarea" name="comente" placeholder="Observações"></textarea>
+</div>
+  <div class="form-group">
+<button type="button" id="submit" class="submit-button">
+Submit
+</button>
+    <label></label>
+    <button type="reset" id="reset" class="submit-button">
+cancelar
+</button>
+</div>
+</form>
+
